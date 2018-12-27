@@ -1,0 +1,36 @@
+REQUIREMENTS
+
+>> pytesseract 
+>> beautiful soup
+>> urllib2:urllib2 is the name of the library included in Python 2. You can use the urllib.request library included with Python 3, instead. The urllib.request library works the same way urllib.request works in Python 2. Because it is already included you don’t need to install it.
+>> os
+>> nltk
+>> googlesearch
+>> re-> "Regular expression operations": This module provides regular expression matching operations similar to those found in Perl.
+
+INSTALLATIONS
+
+>> all the installations can be done using 'pip3' [python3] and 'pip' or 'pip2' [python2]
+>> few modules like pytesseract need to be installed  from 'apt'
+
+sudo pip3 install <<package name>>
+ OR
+sudo apt install <<module name>>
+
+DESCRIPTION
+
+>> The model uses tesseract-ocr library to extract all the text from the image whose address has to be passed earlier in the code.
+
+>> Next, out of that extracted data, user is asked if he/she want to ask anything or have a doubt from the extracted data. This is done via voice output from the system as well as text
+
+>> After the user enters his/her query, the processing starts at the backend. That specific keyword is searched online and the first link appearing is grabbed using web scrapping. 
+
+>> In that link, again all the text is collected and made in the form an article. 
+
+>> Now comes the part of NLP. Here, from that extracted paragraphs, all extra brackets and extra spaces are removed. Along with this, extra numbers and special characters are also removed.
+
+>> Next, weighted frequency of occurrence is found out. to find the weighted frequency, simply divide the number of occurances of all the words by the frequency of the most occurring word.
+
+>> Lastly, calculate the sentence scores and then summarise the data. 
+
+>> Now just print this on the output console. 
